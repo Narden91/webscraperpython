@@ -34,7 +34,7 @@ def main():
         links = job_element.find_all("a")
         for link in links:
             link_url = link["href"]
-            if link_url != "https://www.realpython.com":
+            if link_url not in "https://www.realpython.com":
                 print(f"Apply here: {link_url} \n")
         print()
 
